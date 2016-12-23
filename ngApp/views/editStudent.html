@@ -1,0 +1,16 @@
+<h2>Edit student</h2>
+<form ng-submit="controller.editStudent()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" ng-model="controller.student.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Class</label>
+    <input type="text" name="class" ng-model="controller.student.class" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Marks</label>
+    <input type="text" name="marks" ng-model="controller.student.marks" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Edit student</button>
+</form>

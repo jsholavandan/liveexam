@@ -1,0 +1,27 @@
+<h2>list Students</h2>
+<div class="btn btn-primary" ng-click="controller.addStudent()">
+  Add student
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    Name
+  </div>
+  <div class="col-md-3">
+
+  </div>
+  <div class="col-md-3">
+
+  </div>
+</div>
+<div class="row" ng-repeat="student in controller.students">
+  <div class="col-md-6">
+    {{student.name}}
+  </div>
+  <div class="col-md-3">
+  <a ui-sref="editStudent({id:student._id})">  Edit</a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" ng-click="controller.deleteStudent(student._id, student.name)">Delete</a>
+  </div>
+</div>
